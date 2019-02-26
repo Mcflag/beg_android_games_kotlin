@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.ccooy.gameframe">
+          xmlns:tools="http://schemas.android.com/tools" package="com.ccooy.gameframe">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
-            android:allowBackup="true"
+            android:allowBackup="false"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".basictest.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".basictest.LifeCycleTest"/>
+        <activity android:name=".basictest.SingleTouchTest"/>
+        <activity android:name=".basictest.MultiTouchTest"/>
+        <activity android:name=".basictest.KeyTest"/>
+        <activity android:name=".basictest.AccelerometerTest"/>
+        <activity android:name=".basictest.AssetsTest"/>
+        <activity android:name=".basictest.ExternalStorageTest"/>
+        <activity android:name=".basictest.SoundPoolTest"/>
+        <activity android:name=".basictest.MediaPlayerTest"/>
+        <activity android:name=".basictest.FullScreenTest"/>
+        <activity android:name=".basictest.RenderViewTest"/>
+        <activity android:name=".basictest.ShapeTest"/>
+        <activity android:name=".basictest.BitmapTest"/>
+        <activity android:name=".basictest.FontTest"/>
+        <activity android:name=".basictest.SurfaceViewTest"/>
     </application>
 
 </manifest>
