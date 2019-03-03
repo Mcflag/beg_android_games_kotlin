@@ -11,9 +11,9 @@ interface Game {
 
     val audio: Audio
 
-    val currentScreen: Screen
+    fun getCurrentScreen(): Screen
 
-    val startScreen: Screen
+    fun getStartScreen(): Screen
 
-    fun setScreen(screen: Screen)
+    fun setCurrentScreen(value: Screen)
 }
